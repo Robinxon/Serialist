@@ -1,0 +1,10 @@
+Options FollowSymLinks
+Options -Indexes
+DirectoryIndex reset.php
+RewriteEngine On
+RewriteRule ^([^/]+)/([^/]+)/$ reset.php?email=$1&hash=$2
+ErrorDocument 400 http://robinxon.webd.pro/error/400.php
+ErrorDocument 401 http://robinxon.webd.pro/error/401.php
+ErrorDocument 403 http://robinxon.webd.pro/error/403.php
+ErrorDocument 404 http://robinxon.webd.pro/error/404.php
+ErrorDocument 500 http://robinxon.webd.pro/error/500.php
